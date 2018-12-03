@@ -32,8 +32,8 @@ class LocationPickerViewController: UIViewController, GMSMapViewDelegate, CLLoca
         // NAV BAR
         title = args["titleText"] as? String
 
-        let cancelBtn = UIBarButtonItem(title: args["iosBackButtonText"] as? String, style: UIBarButtonItemStyle.done, target: self, action: #selector(close))
-        let selectBtn = UIBarButtonItem(title: args["iosSelectButtonText"] as? String, style: UIBarButtonItemStyle.done, target: self, action: #selector(selectLocation))
+        let cancelBtn = UIBarButtonItem(title: args["iosBackButtonText"] as? String, style: UIBarButtonItem.Style.done, target: self, action: #selector(close))
+        let selectBtn = UIBarButtonItem(title: args["iosSelectButtonText"] as? String, style: UIBarButtonItem.Style.done, target: self, action: #selector(selectLocation))
         
         self.navigationItem.rightBarButtonItem = selectBtn
         self.navigationItem.leftBarButtonItem = cancelBtn
